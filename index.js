@@ -5,9 +5,8 @@ String.prototype.equals = function(str){
     return false;
 }
 
-
+exports.WebHostBuilder = require('./lib/WebHostBuilder.js');
 exports.Server = require('./lib/Server.js');
-exports.Host = require('./lib/Host.js');
 exports.Application = require('./lib/Application.js');
 exports.Controller = require('./lib/Controller.js');
 exports.HttpController = require('./lib/HttpController.js');
