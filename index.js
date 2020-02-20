@@ -52,6 +52,8 @@ exports.Application = require('./lib/Application.js');
 exports.Controller = require('./lib/Controller.js');
 exports.HttpController = require('./lib/HttpController.js');
 exports.View = require('./lib/View.js');
+exports.HttpException = require('./lib/HttpException.js');
+exports.MimeTypes = require('./lib/MimeTypes.js');
 exports.Session = {
     Memory : require('./lib//Session/Memory.js'),
     FileSystem : require('./lib//Session/FileSystem.js')
