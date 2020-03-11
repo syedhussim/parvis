@@ -5,6 +5,20 @@ String.prototype.equals = function(str){
     return false;
 }
 
+String.prototype.ifEmpty = function(str){
+    if(this.toString() == ""){
+        return str;
+    }
+    return this.toString();
+}
+
+String.prototype.ifEmptyThen = function(str1, str2){
+    if(this.toString() == ""){
+        return str1;
+    }
+    return str2;
+}
+
 Date.prototype.format = function(format){
     let formattedDate = [];
 
