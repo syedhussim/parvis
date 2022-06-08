@@ -1,5 +1,10 @@
 String.prototype.equals = function(str){
-    if(this.toString() === str){
+    let thisValue = this.toString();
+
+    if(thisValue == null){
+        thisValue = '';
+    }
+    if(thisValue === str){
         return true;
     }
     return false;
@@ -68,6 +73,7 @@ exports.HttpController = require('./lib/HttpController.js');
 exports.View = require('./lib/View.js');
 exports.HttpException = require('./lib/HttpException.js');
 exports.MimeTypes = require('./lib/MimeTypes.js');
+exports.Utils = require('./lib/Utils.js');
 exports.Session = {
     Memory : require('./lib//Session/Memory.js'),
     FileSystem : require('./lib//Session/FileSystem.js')
