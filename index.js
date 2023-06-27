@@ -76,6 +76,7 @@ exports.HttpException = require('./lib/HttpException.js');
 exports.MimeTypes = require('./lib/MimeTypes.js');
 exports.Utils = require('./lib/Utils.js');
 exports.Validation = require('./lib/Validation.js');
+exports.WebRequest = require('./lib/WebRequest.js');
 exports.Session = {
     Memory : require('./lib//Session/Memory.js'),
     FileSystem : require('./lib//Session/FileSystem.js')
